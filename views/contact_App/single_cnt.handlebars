@@ -1,0 +1,14 @@
+{{#if payload}}
+<h1>Contact Info</h1>
+
+<div class="conlist">
+<ul class="c3">
+    <li>First Name:{{payload.fname}}</li>
+    <li>Last Name:{{payload.lname}}</li>
+    <li>Number:{{payload.nmbr}}</li>
+    <li>Saved Location:{{payload.loc}}</li>
+</ul>
+</div>
+{{else}}
+<h1>No Such Data</h1>
+{{/if}}

@@ -1,0 +1,33 @@
+
+<body>
+     <h1>Add a Contact</h1>
+     <section class="c1">
+        <article>
+            <form action="/api/addContact" method="post">
+                <div class="con-group">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter the First Name" required>
+                </div>
+                <div class="con-group">
+                     <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Enter the Last Name" required>
+                </div>
+                <div class="con-group">
+                     <label for="nmbr">Mobile Number:</label>
+                    <input type="text" id="nmbr" name="nmbr" placeholder="Enter the Number" required>
+                </div>
+                <div class="con-group">
+                    <label for="loc">Saving Location:</label>
+                    <select name="loc" id="loc">
+                        <option value="mobile">Mobile</option>
+                        <option value="sim">Sim</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+                <div class="con-group">
+                    <button type="submit">Create Contact</button>
+                </div>
+            </form>
+        </article>
+     </section>
+</body>

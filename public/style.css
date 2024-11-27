@@ -1,0 +1,270 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #444;
+}
+
+/* Home Page */
+.home1 {
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff, 0 0 50px #0ff, 0 0 60px #0ff;
+    animation: neon-run 1.5s infinite alternate;
+  }
+  
+  @keyframes neon-run {
+    from {
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff, 0 0 40px #0ff;
+    }
+    to {
+      text-shadow: 0 0 10px rgb(230, 213, 230), 0 0 20px rgb(79, 75, 79), 0 0 30px rgb(196, 196, 196), 0 0 40px rgb(137, 128, 137);
+    }
+  }
+
+  .card {
+    background: #121212;
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    margin: 20px;
+    max-width: 600px;
+    margin-left: 520px;
+  }
+  
+  .card h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 14px;
+    color: #555;
+    background-color: #eee;
+    padding: 10px 0;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+/* Add Contact Form */
+.c1 {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.con-group {
+    margin-bottom: 15px;
+}
+
+.con-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.con-group input, 
+.con-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Contact List */
+.conlist {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+
+.conlist h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.c2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f7f7f7;
+    border: 1px solid #e1e1e1;
+    border-radius: 6px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.c2:nth-child(odd) {
+    background-color: #f0f0f0;
+}
+
+.c2:hover {
+    transform: translateY(-2px);
+    background-color: #e9e9e9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.c3 {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.c3 li {
+    margin: 10px 0;
+    padding: 5px 0;
+    font-size: 18px;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.c3 li:last-child {
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.c3 span.label {
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+    margin-right: 10px;
+}
+
+.c3 span.value {
+    color: #444;
+    text-align: right;
+}
+
+
+
+/* cntlist button */
+/* Button Group Container */
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Button Group Buttons */
+.btn-group span {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.btn-group a {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Info Button */
+.btn-group .cntinfo a {
+    background-color: #007BFF; /* Blue */
+}
+
+.btn-group .cntinfo a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Edit Button */
+.btn-group .edit a {
+    background-color: #FFC107; /* Yellow */
+}
+
+.btn-group .edit a:hover {
+    background-color: #e0a800;
+    transform: translateY(-2px);
+}
+
+/* Delete Button */
+.btn-group .delete a {
+    background-color: #DC3545; /* Red */
+}
+
+.btn-group .delete a:hover {
+    background-color: #b02a37;
+    transform: translateY(-2px);
+}
