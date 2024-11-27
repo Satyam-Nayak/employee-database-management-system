@@ -20,7 +20,7 @@ router.get('/addContact',(req,res)=>{
 
 router.post('/addContact',async(req,res)=>{
     await Cnt_Schema.create(req.body)
-    res.redirect('/home',302,{})
+    res.redirect('/api/allContact',302,{})
 })
 
 router.get('/allContact',async(req,res)=>{
